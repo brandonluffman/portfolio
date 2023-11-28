@@ -6,6 +6,7 @@ import {AiFillFileWord} from 'react-icons/ai'
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import { BiLinkExternal } from 'react-icons/bi';
+import Image from "next/image";
 
   
 export default function Home() {
@@ -57,6 +58,7 @@ export default function Home() {
         </div>
         <div className="index-about-div-right">
           <img className='index-about-div-img' src='/profile-img.webp' />
+
           <button className='index-about-div-btn' type='button'><AiFillFileWord className="index-about-file-icon"/></button>
         </div>
       </div>

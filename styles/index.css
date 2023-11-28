@@ -540,7 +540,7 @@ animation: sate3 3s infinite;
 
 .work-overlay {
     background-color: rgba(73, 73, 73, 0.4);
-    z-index:9999999 !important;
+    z-index:999 !important;
     height:400px;
     width: 100%;
     transition: 0.2s ease all;
