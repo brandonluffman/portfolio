@@ -1,75 +1,62 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { MdClear } from 'react-icons/md';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-// import serviceTowns from '../pages/api/towns'
-// import DatePicker from 'react-datepicker';
-// import 'react-datepicker/dist/react-datepicker.css';
-// import TimePicker from 'react-time-picker';
 
 const Contact = () => {
-  const inquiry = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const formRef = useRef(); // Create a reference to the form
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSubmitted(true); // Set isSubmitted to true to show the tag
+    console.log('Submitted');
+    formRef.current.reset(); // Reset the form
+
+    // Add your email sending logic here
+};
+
+useEffect(() => {
+  if (isSubmitted) {
+      // Set a timeout to hide the tag after 2 seconds
+      const timer = setTimeout(() => {
+          setIsSubmitted(false);
+      }, 2000);
+
+      // Clear the timer if the component is unmounted
+      return () => clearTimeout(timer);
+  }
+}, [isSubmitted]);
 
   return (
     <div>
           <Head>
           <title>Contact Me</title>
-          <meta name="description" content="CLEO Painting: Unparalleled Exterior and Interior Painting expertise serving all of Fairfield County and surrounding areas."/>
-          <meta charSet="utf-8" />
-          <meta name="robots" content="index, follow" />
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link rel="icon" type="image/png" href="/favicon.png" alt="Favicon" />
-          <link rel="apple-touch-icon" href="/favicon.png" /> 
-          <link rel="canonical" href="https://cleoexteriors.com/contact"/>
-          <meta property="og:type" content="article" />
-          <meta property="og:title" content="CLEO Painting" />
-          <meta property="og:description" content="CLEO Painting: Unparalleled Exterior and Interior Painting expertise serving all of Fairfield County and surrounding areas." />
-          <meta property="og:image" content="/favicon.png" />
-          <meta property="og:url" content="cleoexteriors.com" />
-          <meta property="og:site_name" content="CLEO Painting" />
-          <meta name="twitter:title" content="CLEO Painting" />
-          <meta name="twitter:description" content="CLEO Painting: Unparalleled Exterior and Interior Painting expertise serving all of Fairfield County and surrounding areas." />
-          <meta name="twitter:image" content="/favicon.png" />
-          <meta name="twitter:site" content="@USERNAME" />
-          <meta name="twitter:creator" content="@USERNAME" />
+
       </Head>
       <Navbar />
     <div className='project-contact-container'>
-    <div id="thank_you" className='thankyou-div' style={{display: 'none'}}>
-            <p className='thankyou-thanks'>Thanks for reaching out! &#129309;</p><br></br>
-            <p className='thankyou-thanks'>We&apos;ll be in touch.</p>
-            {/* <MdClear className='thankyou-close' onClick={closeBtn} /> */}
-        </div>
-    {/* <form ref={inquiry} onSubmit={sendEmail} className='project-form'> */}
-    <form ref={inquiry} className='project-form'>
+        <form onSubmit={sendEmail} ref={formRef}  className='project-form'>
         <h1 className='project-header'>Hey, let&apos;s get in touch. <span className='hand-emoji'>&#128075;</span></h1>
-        {/* <p className='project-subheader'>I&apos;m interested in... *</p> */}
-        {/* <div className='form-app-selection'>
-                <input id='select-1' type="radio" value="Business Website" className="radio-input" name="interest" />
-                <label className='radio-label' htmlFor='select-1'>Exterior Painting</label>
-                <input id='select-2' type="radio" value="Business Website" className="radio-input" name="interest" />
-                <label className='radio-label' htmlFor='select-2'>Interior Painting</label>
-        </div> */}
-        <div className='form-inputs'>
-                <input type='text' placeholder='Your name *' className='form-input' name="name" required/><br></br>
-                <input type='email' placeholder='Your email *' className='form-input' name="email" required/><br></br>
-                <textarea placeholder='Your Message...' className='form-input' name='message' />
-        </div>
-  
-        <div>
-    </div>
-           {/* <TimePicker
-                className='form-input time-form-input'
-      value={selectedTime}
-      onChange={(time) => setSelectedTime(time)}
-    /> */}
-  
-
-        <div className='form-button'>
-                <button className='project-form-btn' value="Send" type='submit'><p className='form-btn-p'>Submit</p><span id='btn-ring' /></button>
-        </div>
+                  <div className='form-inputs'>
+                          <input type='text' placeholder='Your name *' className='form-input' name="name" required/><br></br>
+                          <input type='email' placeholder='Your email *' className='form-input' name="email" required/><br></br>
+                          <textarea placeholder='Your Message...' className='form-input' name='message' />
+                  </div>
+            
+                  <div>
+              </div>
+            <div className='form-button'>
+                    <button className='project-form-btn' value="Send" type='submit'><p className='form-btn-p'>Submit</p><span id='btn-ring' /></button>
+            </div>
         </form>
+
+        {isSubmitted && (
+                <div className="tag-container">
+                    <span className="tag">Thanks for Submitting!</span>
+                </div>
+            )}
         </div>
         <Footer />
     </div>
