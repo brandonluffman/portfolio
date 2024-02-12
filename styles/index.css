@@ -161,6 +161,8 @@ animation: sate3 3s infinite;
     border-radius:20px;
     font-size: 1.2rem;
     background: linear-gradient(to right, #4b95da 50%,black 50%);
+    /* background: linear-gradient(to right, #77f, #33d0ff, #25ffbb, #33d0ff, #77f); */
+
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .3s ease-out;
@@ -277,9 +279,9 @@ animation: sate3 3s infinite;
     box-shadow:1px 1px 8px rgba(255,255,255,0.3);
 }
 @keyframes pulse {
-    0% { box-shadow:0 0 8px #8ac7ff, inset 0 0 8px #8ac7ff; }
-    50% { box-shadow:0 0 16px #8ac7ff, inset 0 0 14px #8ac7ff; }
-    100% { box-shadow:0 0 8px #8ac7ff, inset 0 0 8px #8ac7ff; }
+    0% { box-shadow:0 0 8px #323232 }
+    50% { box-shadow:0 0 16px #292929 }
+    100% { box-shadow:0 0 8px #323232 }
   }
 .index-about-div-btn {
     margin:0 auto;
@@ -293,21 +295,26 @@ animation: sate3 3s infinite;
 
 .index-about-copy-btn {
     margin:0 auto;
-    border-radius:20px;
+    border-radius:30px;
     border:none;
     transition:0.3s ease all;
     padding:0.8rem 1.5rem;
     background-color: rgb(0, 133, 242);
-    animation: 2s pulse infinite;
+    /* animation: 2s pulse infinite; */
     display: flex;
     align-items: center;
     font-size:1.2rem;
     margin-left:0;
     margin-bottom:1rem;
+    font-weight: 700;
+    box-shadow:0 0 8px #323232
+
+    /* text-transform: uppercase; */
 }
 
 .index-about-copy-btn:hover {
     cursor: pointer;
+    transform: translateY(-2px);
 }
 .index-about-copy-arrow {
     margin-left:1rem;
@@ -423,11 +430,11 @@ animation: sate3 3s infinite;
 
 
 .technical-skill-item:nth-of-type(1) > .technical-percentage > .percentage {
-    width:90%;
+    width:95%;
 }
 
 .technical-skill-item:nth-of-type(2) > .technical-percentage > .percentage {
-    width:90%;
+    width:95%;
 }
 
 .technical-skill-item:nth-of-type(3) > .technical-percentage > .percentage {
@@ -443,7 +450,7 @@ animation: sate3 3s infinite;
 }
 
 .technical-skill-item:nth-of-type(6) > .technical-percentage > .percentage {
-    width:80%;
+    width:90%;
 }
 
 .technical-skill-item:nth-of-type(7) > .technical-percentage > .percentage {
@@ -459,14 +466,17 @@ animation: sate3 3s infinite;
 }
 
 .technical-skill-item:nth-of-type(10) > .technical-percentage > .percentage {
-    width:70%;
+    width:90%;
 }
 
 .technical-skill-item:nth-of-type(11) > .technical-percentage > .percentage {
-    width:60%;
+    width:90%;
 }
 
 .technical-skill-item:nth-of-type(12) > .technical-percentage > .percentage {
+    width:90%;
+}
+.technical-skill-item:nth-of-type(13) > .technical-percentage > .percentage {
     width:90%;
 }
 

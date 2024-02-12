@@ -7,6 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import { BiLinkExternal } from 'react-icons/bi';
 import Image from "next/image";
+import Head from "next/head";
 
   
 export default function Home() {
@@ -23,6 +24,36 @@ export default function Home() {
 
   return (
     <>
+           <Head>  
+<title>Portfolio | Luffman</title>
+         {/* <script
+           type="application/ld+json"
+           dangerouslySetInnerHTML={{ __html: JSON.stringify({
+               "@context": "https://schema.org",
+               "@type": "Organization",
+               "url": "https://www.phantomdm.com",
+               "logo": "https://www.phantom.com/public/img.png"
+             })}}
+         /> */}
+         <meta name="description" content="My portfolio."/>
+         <meta charSet="utf-8" />
+         <meta name="robots" content="index, follow" />
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <link rel="icon" type="image/png" href="/favicon.png" alt="Favicon" />
+         <link rel="apple-touch-icon" href="/favicon.png" />
+         <link rel="canonical" href="https://thedevportfolio.vercel.app/"/>
+           <meta property="og:type" content="article" />
+           <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
+           <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+           <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+           <meta property="og:url" content="PERMALINK" />
+           <meta property="og:site_name" content="SITE NAME" />
+           <meta name="twitter:title" content="TITLE OF POST OR PAGE" />
+           <meta name="twitter:description" content="DESCRIPTION OF PAGE CONTENT" />
+           <meta name="twitter:image" content="LINK TO IMAGE" />
+           <meta name="twitter:site" content="@USERNAME" />
+           <meta name="twitter:creator" content="@USERNAME" />
+     </Head>
     {loading ? (
     <div className="splash">
       Loading
@@ -69,17 +100,20 @@ export default function Home() {
       </div> */}
       <h3 className="index-technical-header index-header">Technical Skills</h3>
       <div className="index-technical-skills-container">
-        <div className="technical-skill-item"><h3 className="technical-skill">React.js</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">React</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">Next.js</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">Javascript</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">Python</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
-        <div className="technical-skill-item"><h3 className="technical-skill">Javscript</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">Typescript</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">Node.js</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">AWS</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">SQL</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">NoSQL</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        <div className="technical-skill-item"><h3 className="technical-skill">REST API</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">HTML5</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">CSS3</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">Git</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
-        <div className="technical-skill-item"><h3 className="technical-skill">AWS</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
-        <div className="technical-skill-item"><h3 className="technical-skill">SQL</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
-        <div className="technical-skill-item"><h3 className="technical-skill">REST API</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
-        <div className="technical-skill-item"><h3 className="technical-skill">Express</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
+        {/* <div className="technical-skill-item"><h3 className="technical-skill">Express</h3><div className="technical-percentage"><div className="percentage"></div></div></div> */}
         <div className="technical-skill-item"><h3 className="technical-skill">Docker</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
       </div>
     </div>
@@ -103,7 +137,7 @@ export default function Home() {
             <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://theresumebuilderai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://headshotgeneratorai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>        
-            <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            {/* <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
 
         {/* <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div>
         <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div> */}
