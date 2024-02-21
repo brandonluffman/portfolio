@@ -94,6 +94,9 @@ export default function Home() {
         </div>
       </div>
     </div>
+    <div className='index-work-container'>
+      <h3 className="index-work-header index-header">Portfolio Work</h3>
+ 
     <div className="index-work-projects-grid">
       <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://venum.vercel.app' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
@@ -107,6 +110,8 @@ export default function Home() {
         <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div> */}
 
       </div>
+      </div>
+
     <div className="index-technical-container">
       {/* <div className="index-technical-top">
         No tag cloud allowed
@@ -130,21 +135,7 @@ export default function Home() {
         <div className="technical-skill-item"><h3 className="technical-skill">Docker</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
       </div>
     </div>
-    <div className='index-work-container'>
-      <h3 className="index-work-header index-header">Portfolio Work</h3>
-      {/* <div className="index-work-featured-projects">
-        <div className="index-work-featured-project">
-          1st Feature
-        </div>
-        <div className="index-work-featured-project">
-          1st Feature
-        </div>
-        <div className="index-work-featured-project">
-          1st Feature
-        </div>
-      </div> */}
- 
-    </div>
+
     <div className='index-contact-container'>
     <h3 className='container-header contact-header index-header'>Contact Me</h3>
         <Contact /> 
