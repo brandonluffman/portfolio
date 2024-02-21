@@ -94,6 +94,19 @@ export default function Home() {
         </div>
       </div>
     </div>
+    <div className="index-work-projects-grid">
+      <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://venum.vercel.app' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            {/* <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
+            {/* <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
+            <Link href='https://theresumebuilderai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            {/* <Link href='https://headshotgeneratorai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>         */}
+            {/* <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
+
+        {/* <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div>
+        <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div> */}
+
+      </div>
     <div className="index-technical-container">
       {/* <div className="index-technical-top">
         No tag cloud allowed
@@ -130,19 +143,7 @@ export default function Home() {
           1st Feature
         </div>
       </div> */}
-      <div className="index-work-projects-grid">
-      <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            <Link href='https://venum.vercel.app' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            <Link href='https://theresumebuilderai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            <Link href='https://headshotgeneratorai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>        
-            {/* <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
-
-        {/* <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div>
-        <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div> */}
-
-      </div>
+ 
     </div>
     <div className='index-contact-container'>
     <h3 className='container-header contact-header index-header'>Contact Me</h3>
