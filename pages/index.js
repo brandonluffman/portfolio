@@ -84,7 +84,7 @@ export default function Home() {
           <p className="index-about-ptag">{`<p>`}</p>
           <p className="index-about-copy">My name is Brandon Luffman, and I&apos;m a passionate Full-Stack Engineer with a strong focus in Artificial Intelligence. My journey in the world of software engineering began in 2019 when I decided to harness my love for problem-solving, building, and creativity. Since then, I&apos;ve embarked on a fulfilling career, during which I&apos;ve contributed to the development of a diverse range of web applications, APIs & more.</p>
           <p className="index-about-ptag bottom-ptag">{`</p>`}</p>
-          <Link href='/about' ><button className='index-about-copy-btn' type='button'>Learn More <BsArrowRight className="index-about-copy-arrow" /></button></Link>
+          <Link href='/about' ><button className='index-about-copy-btn' type='button'>Learn More</button></Link>
 
         </div>
         <div className="index-about-div-right">
@@ -112,10 +112,8 @@ export default function Home() {
       </div>
       </div>
 
-    <div className="index-technical-container">
-      {/* <div className="index-technical-top">
-        No tag cloud allowed
-      </div> */}
+    {/* <div className="index-technical-container">
+
       <h3 className="index-technical-header index-header">Technical Skills</h3>
       <div className="index-technical-skills-container">
         <div className="technical-skill-item"><h3 className="technical-skill">React</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
@@ -131,10 +129,9 @@ export default function Home() {
         <div className="technical-skill-item"><h3 className="technical-skill">HTML5</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">CSS3</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
         <div className="technical-skill-item"><h3 className="technical-skill">Git</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
-        {/* <div className="technical-skill-item"><h3 className="technical-skill">Express</h3><div className="technical-percentage"><div className="percentage"></div></div></div> */}
         <div className="technical-skill-item"><h3 className="technical-skill">Docker</h3><div className="technical-percentage"><div className="percentage"></div></div></div>
       </div>
-    </div>
+    </div> */}
 
     <div className='index-contact-container'>
     <h3 className='container-header contact-header index-header'>Contact Me</h3>

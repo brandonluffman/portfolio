@@ -25,10 +25,12 @@
     justify-content: center; */
 }
 .footer-brand-logo {
-    margin-bottom:10rem;
     margin: 0 auto;
-    width:75px;
-    margin-bottom:2rem;
+    max-width: 60px;
+    margin-bottom: 2rem;
+    padding: 1rem 0rem;
+    font-weight: 100 !important;
+    font-family: Montserrat;
 }
 .too {
     color:black;

@@ -68,12 +68,7 @@ function Navbar() {
             Portfolio
           </li>
           </Link>
-          {/* <Link href='/contact' className="nav-link">
-          <li className="nav-item" onClick={toggleNav}>
-            Contact
-          </li>
-          </Link> */}
-          <Link className='nav-contact-btn-link' href='/contact'><button className='nav-contact-btn' type='button'>Contact Me <AiOutlineSchedule className="nav-contact-btn-icon" /></button></Link>
+          <Link className='nav-contact-btn-link' href='/contact'><button className='nav-contact-btn' type='button'>Contact Me</button></Link>
           </div>
           {isActive? <MdClear  style={{right: showMe? "0":"-100%"}} className='hamburger-btn hamburger-close-btn' onClick={toggleNav}/>:<MdMenu  style={{right: showMe? "0":"-100%"}} className='hamburger-btn' onClick={toggleNav} />}
         </div>
@@ -94,33 +89,20 @@ function Navbar() {
               Portfolio
           </li>
           </Link>
-          {/* <Link href='/services' className="nav-link">
-          <li className="nav-item" onClick={toggleNav}>
-              Services
-          </li>
-          </Link> */}
           <Link href="/resume.pdf" passHref className="nav-link" target="_blank">
             <li className="nav-item">
               Resume
               <BiLinkExternal className="resume-icon" />
             </li>
             </Link>
-          {/* <Link href='/locations' className="nav-link">
-          <li className="nav-item" onClick={toggleNav}>
-              Locations
-          </li>
-          </Link> */}
           <Link href='/contact' className="nav-link">
           <li className="nav-item nav-item-margin" onClick={toggleNav}>
               Contact
           </li>
           </Link>
-          {/* <Link href='/contact'><button className='nav-contact-menu-btn' type='button'>Book Appointment <AiOutlineSchedule className="nav-contact-btn-icon" /></button></Link> */}
-
           <li className="nav-item brand-img-nav-item">
           <div className="dropdown-brand-div">
           <span className="brand-logo">B</span>
-            {/* <Image className='dropdown-brand-img' src='/logo.png' alt='Brand Logo' height='65' width='50' /> */}
           </div>
           </li>
         </ul>

@@ -136,6 +136,16 @@ input:focus, textarea:focus {
 }
 
 
+.tag-container-index {
+     background-color: rgb(0, 133, 242);
+     max-width: 50%;
+     margin:0 auto;
+     padding:1rem;
+     border-radius: 5px;
+     font-weight: bold;
+}
+
+
   @media (max-width: 900px) {
     .contact-form-div {
         display: flex;
