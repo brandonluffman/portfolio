@@ -3,9 +3,26 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import {IoIosArrowDropdownCircle} from 'react-icons/io'
 import Link from 'next/link'
+import Head from 'next/head'
 const portfolio = () => {
   return (
     <>
+           <Head>  
+        <title>Portfolio | Portfolio</title>
+         <meta name="description" content="My portfolio."/>
+         <meta charSet="utf-8" />
+         <meta name="robots" content="noindex, nofollow" />
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <link rel="icon" type="image/png" href="/favicon.png" alt="Favicon" />
+         <link rel="apple-touch-icon" href="/favicon.png" />
+         <link rel="canonical" href="https://thedevportfolio.vercel.app/"/>
+           <meta property="og:type" content="article" />
+           <meta property="og:title" content="Portfolio" />
+           <meta property="og:description" content="My dev portfolio." />
+           <meta property="og:image" content="/favicon.png" />
+           <meta property="og:url" content="https://thedevportfolio.vercel.app/" />
+           <meta property="og:site_name" content="Portfolio" />
+     </Head>
         <Navbar />
         <div className='portfolio-container portfolio-page-container'>
             <div className='portfolio-copy-container'>

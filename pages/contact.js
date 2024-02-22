@@ -31,10 +31,22 @@ useEffect(() => {
 
   return (
     <div>
-          <Head>
-          <title>Contact Me</title>
-
-      </Head>
+                <Head>  
+        <title>Portfolio | Contact</title>
+         <meta name="description" content="My portfolio."/>
+         <meta charSet="utf-8" />
+         <meta name="robots" content="noindex, nofollow" />
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <link rel="icon" type="image/png" href="/favicon.png" alt="Favicon" />
+         <link rel="apple-touch-icon" href="/favicon.png" />
+         <link rel="canonical" href="https://thedevportfolio.vercel.app/"/>
+           <meta property="og:type" content="article" />
+           <meta property="og:title" content="Portfolio" />
+           <meta property="og:description" content="My dev portfolio." />
+           <meta property="og:image" content="/favicon.png" />
+           <meta property="og:url" content="https://thedevportfolio.vercel.app/" />
+           <meta property="og:site_name" content="Portfolio" />
+     </Head>
       <Navbar />
     <div className='project-contact-container'>
         <form onSubmit={sendEmail} ref={formRef}  className='project-form'>
@@ -53,7 +65,7 @@ useEffect(() => {
         </form>
 
         {isSubmitted && (
-                <div className="tag-container">
+                <div className="tag-container tag-container-index">
                     <span className="tag">Thanks for Submitting!</span>
                 </div>
             )}

@@ -25,34 +25,20 @@ export default function Home() {
   return (
     <>
            <Head>  
-<title>Portfolio | Luffman</title>
-         {/* <script
-           type="application/ld+json"
-           dangerouslySetInnerHTML={{ __html: JSON.stringify({
-               "@context": "https://schema.org",
-               "@type": "Organization",
-               "url": "https://www.phantomdm.com",
-               "logo": "https://www.phantom.com/public/img.png"
-             })}}
-         /> */}
+        <title>Portfolio | Luffman</title>
          <meta name="description" content="My portfolio."/>
          <meta charSet="utf-8" />
-         <meta name="robots" content="index, follow" />
+         <meta name="robots" content="noindex, nofollow" />
          <meta name="viewport" content="width=device-width, initial-scale=1"/>
          <link rel="icon" type="image/png" href="/favicon.png" alt="Favicon" />
          <link rel="apple-touch-icon" href="/favicon.png" />
          <link rel="canonical" href="https://thedevportfolio.vercel.app/"/>
            <meta property="og:type" content="article" />
-           <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
-           <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
-           <meta property="og:image" content="LINK TO THE IMAGE FILE" />
-           <meta property="og:url" content="PERMALINK" />
-           <meta property="og:site_name" content="SITE NAME" />
-           <meta name="twitter:title" content="TITLE OF POST OR PAGE" />
-           <meta name="twitter:description" content="DESCRIPTION OF PAGE CONTENT" />
-           <meta name="twitter:image" content="LINK TO IMAGE" />
-           <meta name="twitter:site" content="@USERNAME" />
-           <meta name="twitter:creator" content="@USERNAME" />
+           <meta property="og:title" content="Portfolio" />
+           <meta property="og:description" content="My dev portfolio." />
+           <meta property="og:image" content="/favicon.png" />
+           <meta property="og:url" content="https://thedevportfolio.vercel.app/" />
+           <meta property="og:site_name" content="Portfolio" />
      </Head>
     {loading ? (
     <div className="splash">
@@ -88,9 +74,41 @@ export default function Home() {
 
         </div>
         <div className="index-about-div-right">
-          <img className='index-about-div-img' src='/profile-img.webp' />
-
-          <button className='index-about-div-btn' type='button'><AiFillFileWord className="index-about-file-icon"/></button>
+          {/* <img className='index-about-div-img' src='/profile-img.png' /> */}
+          <div className="timeline-container">
+            <div className="timeline">
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2019</div>
+                <div className="timeline-content">Embarked on Development Journey</div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2020</div>
+                <div className="timeline-content">Began building full stack applications</div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2021</div>
+                <div className="timeline-content">Built First app</div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2022</div>
+                <div className="timeline-content">Graduated College & Started Job as Software Engineer</div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2023</div>
+                <div className="timeline-content">Built Ranki, ResumeBuilderAI & Venum</div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-date">2024</div>
+                <div className="timeline-content"><Link href='/resume.pdf' target="_blank" rel='noreferrer'><button className='index-about-div-btn' type='button'><AiFillFileWord className="index-about-file-icon"/></button></Link></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

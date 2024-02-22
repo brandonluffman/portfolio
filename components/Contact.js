@@ -26,18 +26,18 @@ const Contact = () => {
         <input type="submit" value="Send" className='contact-form-item contact-form-btn' />
       </form>
       <div className="contact-sides">
-        <p className="contact-sides-header">Get in touch!</p>
+        <p className={showAlert ? "contact-sides-header black-bg":"contact-sides-header"}>{showAlert ? 'Thanks for submitting!':'Get in touch!'}</p>
         <Link href='/contact'><button className='contact-book-btn'><BsArrowRight className='arrow-icon'></BsArrowRight></button></Link>
         <div className="contact-info">
         </div>
       </div>
     </div>
 
-    {showAlert && (
+    {/* {showAlert && (
     <div className="tag-container tag-container-index">
     <span className="tag">Thanks for Submitting!</span>
     </div>
-)}
+)} */}
     </div>
   );
 };

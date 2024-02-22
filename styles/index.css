@@ -167,13 +167,15 @@ animation: sate3 3s infinite;
   background-position: right bottom;
   transition: all .3s ease-out;
   border:none;
-  box-shadow: 0px 1px 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 12px rgba(200, 200, 200, 0.4);
   text-align: center;
   font-size: 25px;
   line-height: 30px; 
-  color:white !important;
+  color:white;
   transition: all .3s ease-out;
   display: block;
+  border:1px solid rgb(0, 133, 242);
+  color: rgb(0, 133, 242);
 }
 
 .index-spotlight-btn:focus {
@@ -184,6 +186,7 @@ animation: sate3 3s infinite;
     background-position: left bottom;
     cursor:pointer;
     transform: translateY(-3px);
+    color:white;
 }
 
 .spotlight-color {
@@ -218,9 +221,11 @@ animation: sate3 3s infinite;
   text-align: center;
   font-size: 25px;
   line-height: 30px; 
-  color:white !important;
+  color:white;
   transition: all .3s ease-out;
   display: block;
+  border:1px solid rgb(0, 133, 242);
+  color: rgb(0, 133, 242);
 }
 }
 
@@ -231,6 +236,7 @@ animation: sate3 3s infinite;
 
 
 .index-about-container {
+    padding-top:50px;
     height:auto;
 }
 
@@ -250,8 +256,8 @@ animation: sate3 3s infinite;
     padding-left:2rem;
 }
 .index-about-div {
-    box-shadow:1px 1px 20px rgba(200,200,200,0.5);
-    border-radius:10px;
+    /* box-shadow:1px 1px 20px rgba(200,200,200,0.5); */
+    /* border-radius:10px; */
     padding: 1rem;
     font-family: "Cascadia";
 }
@@ -260,9 +266,10 @@ animation: sate3 3s infinite;
     font-size:2.5rem;
     color:rgb(0, 133, 242);
   font-style: italic;
+  margin:0;
 }
  .bottom-ptag {
-        margin-bottom:4rem;
+        margin-bottom:6rem;
 
     }
 
@@ -273,10 +280,10 @@ animation: sate3 3s infinite;
     color:rgb(220,220,220);
 }
 .index-about-div-img {
-    width:30%;
+    width:50%;
     margin:0 auto;
     border-radius: 20px;
-    box-shadow:1px 1px 8px rgba(255,255,255,0.3);
+    /* box-shadow:1px 1px 8px rgba(255,255,255,0.3); */
 }
 @keyframes pulse {
     0% { box-shadow:0 0 8px #323232 }
@@ -299,7 +306,9 @@ animation: sate3 3s infinite;
     border:none;
     transition:0.3s ease all;
     padding:0.8rem 1.5rem;
-    background-color: rgb(0, 133, 242);
+    color: rgb(0, 133, 242);
+    border:1px solid rgb(0, 133, 242);
+    background-color: black;
     /* animation: 2s pulse infinite; */
     display: flex;
     align-items: center;
@@ -307,14 +316,75 @@ animation: sate3 3s infinite;
     margin-left:0;
     margin-bottom:1rem;
     font-weight: 700;
-    box-shadow:0 0 8px #323232
+    box-shadow:1px 1px 8px #676767
 
     /* text-transform: uppercase; */
 }
 
+/* */
+
+.timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: #ddd;
+    border-radius: 2px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 133, 242);
+    transform: translateX(-50%);
+  }
+  
+  .timeline-date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+  
+  .timeline-content {
+    padding-left: 20px;
+  }
+
+  
+  /* */
+
+
+
+
 .index-about-copy-btn:hover {
     cursor: pointer;
     transform: translateY(-2px);
+    background-color: rgb(0, 133, 242);
+    color: white;
 }
 .index-about-copy-arrow {
     margin-left:1rem;
@@ -329,8 +399,14 @@ animation: sate3 3s infinite;
     border:none;  
 }
 .index-about-file-icon {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
+
+/* .index-about-div-right a {
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+} */
 
 @media only screen and (max-width: 900px) {
     .index-about-containr {

@@ -37,10 +37,13 @@
     font-weight:600;
     height:50px;
     width:50px;
-    background-image: url('/profile-img.webp');
+    /* background-image: url('/profile-img.webp');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     box-shadow: 1px 1px 18px rgba(255,255,255,0.2);
     margin-right:2rem;
@@ -66,6 +69,13 @@
     bottom:20px;
     right:20px;
     cursor:pointer;
+    transition: 0.2s ease all;
+}
+
+.about-work-btn:hover {
+    background-color: black;
+    border: 3px solid rgb(0, 133, 242);
+    
 }
 .about-work-text {
     position: absolute;
