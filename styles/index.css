@@ -174,7 +174,7 @@ animation: sate3 3s infinite;
   color:white;
   transition: all .3s ease-out;
   display: block;
-  border:1px solid rgb(0, 133, 242);
+  border:2px solid rgb(0, 133, 242);
   color: rgb(0, 133, 242);
 }
 
@@ -224,7 +224,7 @@ animation: sate3 3s infinite;
   color:white;
   transition: all .3s ease-out;
   display: block;
-  border:1px solid rgb(0, 133, 242);
+  border:2px solid rgb(0, 133, 242);
   color: rgb(0, 133, 242);
 }
 }
@@ -307,7 +307,7 @@ animation: sate3 3s infinite;
     transition:0.3s ease all;
     padding:0.8rem 1.5rem;
     color: rgb(0, 133, 242);
-    border:1px solid rgb(0, 133, 242);
+    border:2px solid rgb(0, 133, 242);
     background-color: black;
     /* animation: 2s pulse infinite; */
     display: flex;

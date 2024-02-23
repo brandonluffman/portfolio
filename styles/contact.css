@@ -61,7 +61,7 @@ input:focus, textarea:focus {
     border-radius: 25px;
     padding:0.8rem 2rem 0.8rem 1.75rem;
     color:rgb(0, 133, 242);
-    border:1px solid rgb(0, 133, 242) !important;
+    border:2px solid rgb(0, 133, 242) !important;
 
     width: auto;
     transition: 0.2s all ease-in-out;
