@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-           <Head>  
+      <Head>  
         <title>Portfolio | Luffman</title>
          <meta name="description" content="My portfolio."/>
          <meta charSet="utf-8" />
