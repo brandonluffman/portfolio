@@ -26,16 +26,22 @@ const about = () => {
      </Head>
       <Navbar />
       <div className='about-container'>
-        <div className='about-img-div'>B</div>
+      <div className="horizontal-line h-line-1"></div>
+      <div className="horizontal-line h-line-2"></div>
+      <div className="horizontal-line h-line-3"></div>
+      <div className="vertical-line v-line-1"></div>
+      <div className="vertical-line v-line-2"></div>
+      <div className="vertical-line v-line-3"></div>
+        <div className='about-img-div fade-left'>B</div>
       {/* <img src='/profile-img.webp' className='about-img'/> */}
-        <h1 className='about-header'>Hey, I&apos;m Brandon Luffman, I am a Full Stack Developer with a deep-rooted passion for Artificial Intelligence, Deep Learning, and Machine Learning. 
+        <h1 className='about-header fade-left'>Hey, I&apos;m Brandon Luffman, I am a Full Stack Developer with a deep-rooted passion for Artificial Intelligence, Deep Learning, and Machine Learning. 
         {/* By day, I craft seamless web applications, and by night, I dive into the fascinating world of AI algorithms and data science.  */}
         When I&apos;m not coding, I&apos;m likely exploring the latest advancements in AI research or brainstorming innovative ways to integrate AI into our daily lives. 
         I&apos;m always excited to learn about emerging technologies and push the boundaries of what&apos;s possible in the realm of technology and artificial intelligence.</h1>
-        <Link href="/resume.pdf" passHref className="nav-link  desktop-nav-link" target="_blank"><button className='index-about-div-btn about-page-icon' type='button'><AiFillFileWord className="index-about-file-icon about-page-file-icon"/></button></Link>
-        <span className='about-check-out'>Check out the resume</span>
-        <Link className='about-work-link' href="/portfolio"><button className='about-work-btn' type='button'></button></Link>
-        <span className='about-work-text'>Take a look at some work I&apos;ve done.</span>
+        <Link href="/resume.pdf" passHref className="nav-link fade-in desktop-nav-link" target="_blank"><button className='index-about-div-btn about-page-icon' type='button'><AiFillFileWord className="index-about-file-icon about-page-file-icon"/></button></Link>
+        <span className='about-check-out fade-in'>Check out the resume</span>
+        <Link className='about-work-link fade-in' href="/portfolio"><button className='about-work-btn' type='button'></button></Link>
+        <span className='about-work-text fade-in'>Take a look at some work I&apos;ve done.</span>
       </div>
       <Footer />
     </>

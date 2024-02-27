@@ -191,12 +191,13 @@ animation: sate3 3s infinite;
 
 .spotlight-color {
     animation: move 5s linear infinite;
-    background-image: linear-gradient(to right, #77f, #33d0ff, #25ffbb, #33d0ff, #77f);
+    background-image: linear-gradient(to right, rgb(0, 133, 242), #33d0ff, rgb(0, 133, 242), #33d0ff, rgb(0, 133, 242));
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.2vw;
 }
+
 
 
 @keyframes move { to { background-position: 200% center; } }
@@ -213,20 +214,20 @@ animation: sate3 3s infinite;
     border-radius:20px;
     font-size: 1rem;
     background: linear-gradient(to right, #4b95da 50%,black 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .3s ease-out;
-  border:none;
-  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.4);
-  text-align: center;
-  font-size: 25px;
-  line-height: 30px; 
-  color:white;
-  transition: all .3s ease-out;
-  display: block;
-  border:2px solid rgb(0, 133, 242);
-  color: rgb(0, 133, 242);
-}
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+    border:none;
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px; 
+    color:white;
+    transition: all .3s ease-out;
+    display: block;
+    border:2px solid rgb(0, 133, 242);
+    color: rgb(0, 133, 242);
+    }
 }
 
 
@@ -320,62 +321,6 @@ animation: sate3 3s infinite;
 
     /* text-transform: uppercase; */
 }
-
-/* */
-
-.timeline-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .timeline {
-    position: relative;
-    padding-left: 40px;
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 20px;
-    height: 100%;
-    width: 2px;
-    background-color: #ddd;
-    border-radius: 2px;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 40px;
-  }
-  
-  .timeline-dot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgb(0, 133, 242);
-    transform: translateX(-50%);
-  }
-  
-  .timeline-date {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-left: 2rem;
-    font-size: 2rem;
-  }
-  
-  .timeline-content {
-    padding-left: 20px;
-  }
-
-  
-  /* */
 
 
 
@@ -667,22 +612,6 @@ animation: sate3 3s infinite;
 .work-projects-link:nth-of-type(3) .index-work-project-grid-item {
     background-image: url('/optimized/resumebuilder-min.png');
   
-}
-.work-projects-link:nth-of-type(4) .index-work-project-grid-item {
-    background-image: url('/optimized/cleo-min.webp');
-  
-}
-.work-projects-link:nth-of-type(5) .index-work-project-grid-item {
-    background-image: url('/optimized/resumebuilder-min.png');
-  
-}
-
-.work-projects-link:nth-of-type(6) .index-work-project-grid-item {
-    background-image: url('/optimized/headshot-gen-min.png');
-}
-
-.work-projects-link:nth-of-type(7) .index-work-project-grid-item {
-    background-image: url('/optimized/dangerfit-min.png');
 }
 .work-projects-link:nth-of-type(2) .index-work-project-grid-item {
     background-image: url('/optimized/venum-min.png');

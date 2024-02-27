@@ -6,6 +6,8 @@ import '../styles/contact.css'
 import '../styles/navbar.css'
 import '../styles/footer.css'
 import '../styles/contactpage.css'
+import '../styles/loading.css'
+
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {

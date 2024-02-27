@@ -36,7 +36,7 @@ function Navbar() {
   return (
 
     <header className="header">
-      <nav className={navbar ? 'navbar scroll' : 'navbar'} id="navbar">
+      <nav className={navbar ? 'navbar scroll fade-in' : 'navbar fade-in'} id="navbar">
         <Link href="/" className="nav-logo">
           <div className="brand-img" id="brand-img">
           {/* <img src='/logo.png' className="absolute-ghost" alt='Logo'></img> */}

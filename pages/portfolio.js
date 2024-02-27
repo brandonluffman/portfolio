@@ -26,9 +26,9 @@ const portfolio = () => {
         <Navbar />
         <div className='portfolio-container portfolio-page-container'>
             <div className='portfolio-copy-container'>
-                <h3>Hey, come take a look at what I&apos;ve built.</h3>
-                <h6>I&apos;ve embarked on an incredible journey, marked by numerous accomplishments and creations. However, my curiosity and passion have evolved, leading me to delve deeper into the captivating world of Artificial Intelligence and its transformative impact on the digital realm.</h6>
-                <div className='arrow-container'>
+                <h3 className='fade-up'>Hey, come take a look at what I&apos;ve built.</h3>
+                <h6 className='fade-up'>I&apos;ve embarked on an incredible journey, marked by numerous accomplishments and creations. However, my curiosity and passion have evolved, leading me to delve deeper into the captivating world of Artificial Intelligence and its transformative impact on the digital realm.</h6>
+                <div className='arrow-container fade-in'>
                 <IoIosArrowDropdownCircle className='portfolio-arrow' />
                 </div>
             </div>

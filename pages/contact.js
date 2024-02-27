@@ -50,11 +50,11 @@ useEffect(() => {
       <Navbar />
     <div className='project-contact-container'>
         <form onSubmit={sendEmail} ref={formRef}  className='project-form'>
-        <h1 className='project-header'>Hey, let&apos;s get in touch. <span className='hand-emoji'>&#128075;</span></h1>
+        <h1 className='project-header fade-left'>Hey, let&apos;s get in touch. <span className='hand-emoji'>&#128075;</span></h1>
                   <div className='form-inputs'>
-                          <input type='text' placeholder='Your name *' className='form-input' name="name" required/><br></br>
-                          <input type='email' placeholder='Your email *' className='form-input' name="email" required/><br></br>
-                          <textarea placeholder='Your Message...' className='form-input' name='message' />
+                          <input type='text' placeholder='Your name *' className='form-input fade-in' name="name" required/><br></br>
+                          <input type='email' placeholder='Your email *' className='form-input fade-in' name="email" required/><br></br>
+                          <textarea placeholder='Your Message...' className='form-input fade-in' name='message' />
                   </div>
             
                   <div>
