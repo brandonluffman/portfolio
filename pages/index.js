@@ -103,14 +103,14 @@ export default function Home() {
      
     </div>
 
-    <div className='index-about-container fade-in-section'>
-      <h3 className="index-about-header index-header">About Me</h3>
+    <div className='index-about-container'>
+      <h3 className="index-about-header index-header fade-in-section">About Me</h3>
       <div className="index-about-div">
         <div className="index-about-div-left">
-          <p className="index-about-ptag">{`<p>`}</p>
-          <p className="index-about-copy">My name is Brandon Luffman, and I&apos;m a passionate<br></br> Full-Stack Engineer with a strong focus in Artificial Intelligence. My journey in the world of software engineering began in 2019 when I decided to harness my love for problem-solving, building, and creativity. Since then, I&apos;ve embarked on a fulfilling career, during which I&apos;ve contributed to the development of a diverse range of web applications, APIs & more.</p>
-          <p className="index-about-ptag bottom-ptag">{`</p>`}</p>
-          <Link href='/about' ><button className='index-about-copy-btn' type='button'>Learn More</button></Link>
+          <p className="index-about-ptag fade-in-section">{`<p>`}</p>
+          <p className="index-about-copy fade-in-section">My name is Brandon Luffman, and I&apos;m a passionate<br></br> Full-Stack Engineer with a strong focus in Artificial Intelligence. My journey in the world of software engineering began in 2019 when I decided to harness my love for problem-solving, building, and creativity. Since then, I&apos;ve embarked on a fulfilling career, during which I&apos;ve contributed to the development of a diverse range of web applications, APIs & more.</p>
+          <p className="index-about-ptag bottom-ptag fade-in-section">{`</p>`}</p>
+          <Link href='/about' ><button className='index-about-copy-btn fade-in-section' type='button'>Learn More</button></Link>
 
         </div>
         <div className="index-about-div-right">
