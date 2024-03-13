@@ -78,13 +78,13 @@ export default function Home() {
            <meta property="og:url" content="https://thedevportfolio.vercel.app/" />
            <meta property="og:site_name" content="Portfolio" />
      </Head>
-    {loading ? (
+    {/* {loading ? (
       <div className="splash">
         <div class="scan">
           <div class="fingerprint"></div>
         </div>
       </div>
-      ) : (
+      ) : ( */}
         <>
     <Navbar />
 
@@ -135,7 +135,7 @@ export default function Home() {
 
     <Footer />
     </>
-     )}
+     {/* )} */}
       </>
   )
 }
