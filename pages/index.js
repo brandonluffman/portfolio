@@ -120,11 +120,24 @@ export default function Home() {
     </div>
     <div className='index-work-container'>
       <h3 className="index-work-header index-header fade-in-section">Portfolio Work</h3>
- 
+      <h4>Full Stack</h4>
     <div className="index-work-projects-grid">
             <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://venum.vercel.app' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://theresumebuilderai.com' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://julietchat.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://crypto-price-tracker-xi.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+
+      </div>
+      <h4>Front-End Focused</h4>
+    <div className="index-work-projects-grid-2">
+            <Link href='https://hapebeast-silk.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://react-landing-page-jade.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+
+
       </div>
       </div>
 

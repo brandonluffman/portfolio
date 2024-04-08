@@ -10,7 +10,7 @@ input:focus, textarea:focus {
 .contact-form {
     width:50%;
     padding:2rem 2rem;
-    border:1px solid rgb(40, 40, 40);
+    border:1px solid rgb(0, 133, 242);
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     transition: 0.2s ease all;
@@ -44,6 +44,13 @@ input:focus, textarea:focus {
     text-align: left;
     font-size: 1.5rem;
     width:100%;
+    font-weight: 300 !important;
+    font-family: 'Montserrat';
+    letter-spacing: -.05vw;
+}
+
+.message-input::placeholder {
+    font-family: Montserrat;
 }
 .name-input, .email-input, .message-input {
     margin-bottom:2rem;
@@ -59,10 +66,10 @@ input:focus, textarea:focus {
 .contact-form-btn {
     background-color: black;
     border-radius: 25px;
-    padding:0.8rem 2rem 0.8rem 1.75rem;
+    padding:0.4rem 2rem;
     color:rgb(0, 133, 242);
     border:2px solid rgb(0, 133, 242) !important;
-
+    font-weight: 500 !important;
     width: auto;
     transition: 0.2s all ease-in-out;
 }
