@@ -136,8 +136,6 @@ export default function Home() {
             <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://react-landing-page-jade.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-
-
       </div>
       </div>
 
