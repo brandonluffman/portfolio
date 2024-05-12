@@ -211,4 +211,7 @@
         margin-top:0;
     }
 
+    .about-page-icon {
+        display: none;
+    }
 }

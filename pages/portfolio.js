@@ -33,19 +33,48 @@ const portfolio = () => {
                 </div>
             </div>
 
-            <div className="index-work-projects-grid portfolio-work-grid">
+            <div className='index-work-container'>
+      <h3 className="index-work-header index-header fade-in-section">Portfolio Work</h3>
+      <h4>Python Projects</h4>
+      <div className="index-work-projects-grid">
+        <div className="index-work-python-item"><div><h2>Resume Parser</h2><p>Python API used to extract all relevant information from a users resume scored against an algorithm created to mimic the ATS process for helping job seekers to optimize their resume.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/resumeparserofficial.git'><img src='github.png' className="gh-logo"></img></Link></div></div>
+        <div className="index-work-python-item"><div><h2>BlackWidow</h2><p>Collected real time information from Reddit, Youtube, Google to garner a sentiment based understanding for products using a mix of web scraping and Natural Language Processing in order to assist buyers with product research instantly.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/BlackWidowAPI'><img src='github.png' className="gh-logo"></img></Link></div></div>
+        <div className="index-work-python-item"><div><h2>GMB Scraper</h2><p>Python Script allowing users the ability to grab contact information of businesses to assist with outreach.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/gmb_scraper'><img src='github.png' className="gh-logo"></img></Link></div></div>
+        {/* <div><h2></h2></div> */}
+      </div>
+      <h4>Full Stack</h4>
+    <div className="index-work-projects-grid">
             <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
             <Link href='https://venum.vercel.app' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            {/* <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
-            {/* <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
             <Link href='https://theresumebuilderai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
-            {/* <Link href='https://headshotgeneratorai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>         */}
-            {/* <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link> */}
-
-        {/* <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div>
-        <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div> */}
+            <Link href='https://julietchat.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://crypto-price-tracker-xi.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
 
       </div>
+      <h4>Front-End Focused</h4>
+    <div className="index-work-projects-grid-2">
+            <Link href='https://hapebeast-silk.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://react-landing-page-jade.vercel.app/' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+      </div>
+      </div>
+
+            {/* <div className="index-work-projects-grid portfolio-work-grid">
+            <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://venum.vercel.app' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://phantomdm.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://cleoexteriors.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://theresumebuilderai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+            <Link href='https://headshotgeneratorai.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>        
+            <Link href='https://dangerfit.com' target="_blank" rel='noreferrer' className="work-projects-link"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
+
+        <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div>
+        <div className="index-work-project-grid-item"><div className="popout"><BiLinkExternal /></div></div>
+
+      </div> */}
+
         </div>
         <Footer />
     </>

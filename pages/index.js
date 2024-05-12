@@ -188,8 +188,7 @@ export default function Home() {
       <div className="index-work-projects-grid">
         <div className="index-work-python-item"><div><h2>Resume Parser</h2><p>Python API used to extract all relevant information from a users resume scored against an algorithm created to mimic the ATS process for helping job seekers to optimize their resume.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/resumeparserofficial.git'><img src='github.png' className="gh-logo"></img></Link></div></div>
         <div className="index-work-python-item"><div><h2>BlackWidow</h2><p>Collected real time information from Reddit, Youtube, Google to garner a sentiment based understanding for products using a mix of web scraping and Natural Language Processing in order to assist buyers with product research instantly.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/BlackWidowAPI'><img src='github.png' className="gh-logo"></img></Link></div></div>
-        <div className="index-work-python-item"><div><h2>GMB Scraper</h2><p>Python Script allowing users the ability to grab contact information of businesses to assist with outreach.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/gmb_scraper'><img src='github.png' className="gh-logo"></img></Link></div></div>
-        {/* <div><h2></h2></div> */}
+        <div className="index-work-python-item"><div><h2>GMB Scraper</h2><p>Python Script allowing users the ability to grab contact information of businesses from Google My Business Listings to assist with outreach.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/gmb_scraper'><img src='github.png' className="gh-logo"></img></Link></div></div>
       </div>
       <h4>Full Stack</h4>
     <div className="index-work-projects-grid">
