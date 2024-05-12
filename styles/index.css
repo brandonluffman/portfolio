@@ -50,18 +50,18 @@
 
 @keyframes pulsate1 {
     0% { border-top: 1px solid #080808; }
-    50% { border-top: 1px solid #202020; }
+    50% { border-top: 1px solid #464646; }
     100% { border-top: 1px solid #080808; }
   }
   @keyframes pulsate2 {
-    0% { border-top: 1px solid #080808; }
+    0% { border-top: 1px solid #2c2c2c;; }
     50% { border-top: 1px solid #202020; }
-    75% { border-top: 1px solid #080808; }
-    100% { border-top: 1px solid #080808; }
+    75% { border-top: 1px solid #676767; }
+    100% { border-top: 1px solid #2c2c2c; }
   }
   @keyframes pulsate3 {
     0% { border-top: 1px solid #202020; }
-    50% { border-top: 1px solid #080808; }
+    50% { border-top: 1px solid #4d4d4d; }
     100% { border-top: 1px solid #202020; }
   }
   
@@ -71,14 +71,14 @@
     100% { border-left: 1px solid #202020; }
   }
   @keyframes sate2 {
-    0% { border-left: 1px solid #202020; }
+    0% { border-left: 1px solid #3a3a3a; }
     50% { border-left: 1px solid #080808; }
-    75% { border-left: 1px solid #202020; }
-    100% { border-left: 1px solid #202020; }
+    75% { border-left: 1px solid #313131; }
+    100% { border-left: 1px solid #3a3a3a; }
   }
   @keyframes sate3 {
     0% { border-left: 1px solid #080808; }
-    50% { border-left: 1px solid #202020; }
+    50% { border-left: 1px solid #3d3d3d; }
     100% { border-left: 1px solid #080808; }
   }
 .horizontal-line {
@@ -93,7 +93,7 @@
     z-index:-1;
 }
 .h-line-1 {
-    width:1500px;
+    width:100vw;
     z-index:-1;
     left:0px;
     top:350px;
@@ -101,7 +101,7 @@
 }
 
 .h-line-2 {
-width:1500px;
+    width:100vw;
 z-index:-1;
 left:0px;
 top:500px;
@@ -110,7 +110,7 @@ animation: pulsate3 2s infinite;
 }
 
 .h-line-3 {
-width:1500px;
+    width:100vw;
 z-index:-1;
 left:0px;
 top:200px;
@@ -245,12 +245,33 @@ animation: sate3 3s infinite;
     display: flex;
 }
 
-.index-about-div-left, .index-about-div-right {
-    width:50%;
+.index-about-div-left {
+    width:70%;
     display: grid;
     align-items: center;
     justify-content: center;
     /* text-align: center; */
+}
+
+.index-about-div-right {
+    width: 30%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.index-about-div-right {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    justify-content: center;
+    text-align: center;
+}
+
+.index-about-div-right img {
+    width: 50px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .index-about-div-left {
@@ -276,7 +297,7 @@ animation: sate3 3s infinite;
 
 .index-about-copy {
     font-size:1.2rem;
-    padding-left:2rem;
+    padding:0rem 2rem;
     line-height:4vh;
     color:rgb(220,220,220);
 }
@@ -347,6 +368,29 @@ animation: sate3 3s infinite;
     font-size: 1.5rem;
 }
 
+
+.index-ab-right-grid {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    font-family: Montserrat;
+}
+
+.index-ab-right-grid h4 {
+    text-align:center;
+    color: rgb(0, 133, 242);
+}
+
+.index-ab-right-grid div {
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+.index-ab-right-grid ul {
+    list-style-type: none;
+    text-align: left;
+    justify-content: left;
+    padding: 0;
+}
 /* .index-about-div-right a {
     margin:0 auto;
     display: flex;
@@ -585,6 +629,36 @@ animation: sate3 3s infinite;
 .index-work-project-grid-item:hover .work-overlay {
     background-color: transparent;
 }
+
+.gh-logo {
+    width: 40px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.gh-logo:hover {
+    background-color: rgb(200, 200, 200);
+}
+.index-work-python-item {
+    /* min-height: 400px; */
+    align-items: center;
+    display: flex;
+
+}
+
+.index-work-python-item div {
+    height: 100%;
+}
+
+.index-work-python-item div p {
+    /* height: 100px; */
+}
+.index-work-container h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
 /* Create a pseudo-element for the color overlay */
 /* .index-work-project-grid-item::before {
     content: "TEST PROJECT";
@@ -651,7 +725,7 @@ animation: sate3 3s infinite;
 
 
 @media only screen and (max-width: 900px) {
-    .index-work-projects-grid {
+    .index-work-projects-grid, .index-work-projects-grid-2 {
         display: grid;
         grid-template-columns: repeat(2,2fr);
         justify-content: center;
@@ -662,7 +736,7 @@ animation: sate3 3s infinite;
 
 
 @media only screen and (max-width: 700px) {
-    .index-work-projects-grid {
+    .index-work-projects-grid, .index-work-projects-grid-2 {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-content: center;

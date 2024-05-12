@@ -176,7 +176,7 @@ input:focus, textarea:focus {
     }
     .contact-sides {
         width: 100%;
-        padding-bottom:2rem;
+        padding:2rem;
         /* border-radius:0px !important; */
         border-radius: 0px !important;
         border-top-left-radius: 20px !important;

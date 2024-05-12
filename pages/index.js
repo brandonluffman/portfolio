@@ -114,12 +114,83 @@ export default function Home() {
 
         </div>
         <div className="index-about-div-right">
+          <img src="/logos/python.png" />
+          <img src="/logos/javascript.png" />
+          <img src="/logos/aws.png" />
+          <img src="/logos/react.png" />
+          <img src="/logos/mysql.png" />
+          <img src="/logos/node.png" />
 
+          {/* <div className="index-ab-right-grid">
+            <div>
+            <h4>Languages</h4>
+              <ul>
+              <li>Python</li>
+              <li>Javascript</li>
+              </ul>
+              </div>
+              <div>
+            <h4>Machine Learning</h4>
+              <ul>              
+              <li>spaCy</li>
+              <li>Pandas</li>
+              <li>Numpy</li>
+              <li>Matplotlib</li>
+              <li>Sci-kit Learn</li>
+              <li>Pytorch</li>
+              <li>NLTK</li>
+              </ul>
+              </div>
+              <div>
+
+            <h4>Full Stack</h4>
+            <ul>
+              <li>HTML/CSS</li>    
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Cloud</h4>
+            <ul>
+            <li>AWS</li>
+            <li>S3</li>
+            <li>EC2</li>
+            <li>Lambda</li>
+            <li>RDS</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Databases</h4>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgresSQL</li>
+              <li>MongoDB</li>
+            </ul>
+            </div>
+            <div>
+            <h4>Development Tools</h4>
+            <ul>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Jenkins</li>
+            </ul>
+            </div>
+          </div> */}
         </div>
       </div>
     </div>
     <div className='index-work-container'>
       <h3 className="index-work-header index-header fade-in-section">Portfolio Work</h3>
+      <h4>Python Projects</h4>
+      <div className="index-work-projects-grid">
+        <div className="index-work-python-item"><div><h2>Resume Parser</h2><p>Python API used to extract all relevant information from a users resume scored against an algorithm created to mimic the ATS process for helping job seekers to optimize their resume.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/resumeparserofficial.git'><img src='github.png' className="gh-logo"></img></Link></div></div>
+        <div className="index-work-python-item"><div><h2>BlackWidow</h2><p>Collected real time information from Reddit, Youtube, Google to garner a sentiment based understanding for products using a mix of web scraping and Natural Language Processing in order to assist buyers with product research instantly.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/BlackWidowAPI'><img src='github.png' className="gh-logo"></img></Link></div></div>
+        <div className="index-work-python-item"><div><h2>GMB Scraper</h2><p>Python Script allowing users the ability to grab contact information of businesses to assist with outreach.</p><Link target="_blank" rel="noreferrer" href='https://github.com/brandonluffman/gmb_scraper'><img src='github.png' className="gh-logo"></img></Link></div></div>
+        {/* <div><h2></h2></div> */}
+      </div>
       <h4>Full Stack</h4>
     <div className="index-work-projects-grid">
             <Link href='https://ranki.ai' target="_blank" rel='noreferrer' className="work-projects-link fade-in-section"><div className="index-work-project-grid-item"><div className="work-overlay"></div></div></Link>
