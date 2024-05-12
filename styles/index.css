@@ -204,7 +204,7 @@ animation: sate3 3s infinite;
 
 @media only screen and (max-width: 400px) {
     .index-spotlight-header {
-        font-size:2rem;
+        font-size:2.25rem;
     }
     .index-spotlight-subheader {
         font-size:1.5rem;
@@ -227,6 +227,10 @@ animation: sate3 3s infinite;
     display: block;
     border:2px solid rgb(0, 133, 242);
     color: rgb(0, 133, 242);
+    }
+
+    .horizontal-line, .vertical-line {
+        display: none;
     }
 }
 
