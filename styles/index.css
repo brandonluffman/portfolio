@@ -423,6 +423,9 @@ animation: sate3 3s infinite;
 }
 
 @media only screen and (max-width: 500px) {
+    .index-about-container {
+        padding-top: 0px;
+    }
     .index-about-copy {
         padding-left:0;
         line-height: 3vh;
@@ -430,6 +433,7 @@ animation: sate3 3s infinite;
     }
     .index-about-ptag {
         margin: 1rem 0rem;
+        font-size: 1.5rem;
     }
     .index-about-copy-btn {
         margin-bottom:4rem;
