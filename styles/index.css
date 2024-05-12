@@ -210,7 +210,7 @@ animation: sate3 3s infinite;
         font-size:1.5rem;
     }
     .index-spotlight-btn {
-    padding:1.5rem 2rem;
+    padding:1rem 1.5rem;
     border-radius:20px;
     font-size: 1rem;
     background: linear-gradient(to right, #4b95da 50%,black 50%);
@@ -440,6 +440,12 @@ animation: sate3 3s infinite;
     .bottom-ptag {
         margin-bottom:4rem;
 
+    }
+    .index-about-div-left {
+        padding-left: 0rem;
+    }
+    .index-about-copy {
+        padding-right: 0;
     }
 }
 
@@ -745,6 +751,12 @@ animation: sate3 3s infinite;
     }
 }
 
+
+@media only screen and (max-width: 500px) {
+    .index-work-projects-grid, .index-work-projects-grid-2 {
+       padding: 0rem 1rem;
+    }
+}
 .index-contact-container {
     margin-bottom:4rem;
     height:auto;
