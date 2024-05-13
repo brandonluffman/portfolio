@@ -662,6 +662,8 @@ animation: sate3 3s infinite;
     border: 1px solid rgb(50, 50, 50);
     padding: 0.5rem;
     box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.2);
+    min-height: 250px;
+    position: relative;
 }
 
 .index-work-python-item div {
@@ -680,6 +682,14 @@ animation: sate3 3s infinite;
 .index-work-container h4 {
     font-size: 1.5rem;
     font-style: italic;
+}
+
+.github-link {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  
 }
 /* Create a pseudo-element for the color overlay */
 /* .index-work-project-grid-item::before {
