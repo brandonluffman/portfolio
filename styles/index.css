@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+body {
+   font-family: "Neue Montreal Bold", "Neue Montreal Bold Placeholder", sans-serif; 
+}
+
 .index-spotlight-container, .index-about-container, .index-technical-container, .index-work-container, .index-contact-container {
     height:70vh;
     padding:0rem 2rem;
@@ -42,6 +46,27 @@
     margin-bottom:1rem;
     font-size: 4rem;
 }
+
+.index-spotlight-header-change {
+    margin: 0.5;
+font-size: 2rem;
+}
+
+.text {
+    transition: 1.5s ease-in-out;
+  }
+  
+  .fadeIn {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 1.5s ease-in-out;
+
+  }
+  
+  .fadeOut {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
 .italic {
     font-style: italic;

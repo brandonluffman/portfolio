@@ -68,7 +68,12 @@ function Navbar() {
             Portfolio
           </li>
           </Link>
-          <Link className='nav-contact-btn-link' href='/contact'><button className='nav-contact-btn' type='button'>Contact Me</button></Link>
+          <Link href='/contact' className="nav-link  desktop-nav-link">
+          <li className="nav-item">
+            Contact
+          </li>
+          </Link>
+          {/* <Link className='nav-contact-btn-link' href='/contact'><button className='nav-contact-btn' type='button'>Contact Me</button></Link> */}
           </div>
           {isActive? <MdClear  style={{right: showMe? "0":"-100%"}} className='hamburger-btn hamburger-close-btn' onClick={toggleNav}/>:<MdMenu  style={{right: showMe? "0":"-100%"}} className='hamburger-btn' onClick={toggleNav} />}
         </div>

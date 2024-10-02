@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Link from "next/link";
-
 import Head from "next/head";
 
 
@@ -40,6 +39,11 @@ const useFadeInSection = () => {
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
+  const [text, setText] = useState('Text 1');
+  const [fade, setFade] = useState(true);
+  const texts = ['Text 1', 'Text 2', 'Text 3'];
+  const intervalTime = 3000; // Time in milliseconds
+
 
   useEffect(() => {
     if (localStorage.getItem('hasVisited')) {
@@ -51,8 +55,26 @@ export default function Home() {
         localStorage.setItem('hasVisited', 'true');
       }, 4000); // Adjust the time as needed
     }
+    
   }, []);
 
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setFade(false); // Start fading out
+      setTimeout(() => {
+        setText((prevText) => {
+          const currentIndex = texts.indexOf(prevText);
+          const nextIndex = (currentIndex + 1) % texts.length;
+          return texts[nextIndex];
+        });
+        setFade(true); // Start fading in
+      }, 1500); // Time it takes for the fade-out to complete
+    }, intervalTime);
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [texts]);
 
   useFadeInSection();
 
@@ -97,6 +119,10 @@ export default function Home() {
     <div className="vertical-line v-line-3"></div>
       <div className="index-spotlight-copy">
       <h3 className="index-spotlight-header fade-left">Hey, I&apos;m <span className="spotlight-color">Brandon Luffman</span></h3>
+      {/* <h1 className="index-spotlight-header-change">{text}</h1> */}
+      <h1 className={`text ${fade ? 'fadeIn' : 'fadeOut'}`}>
+      {text}
+    </h1>
       <h6 className="index-spotlight-subheader fade-left">Come check out my <span className="italic">portfolio</span>.</h6>
             <Link href='/contact'><button className="index-spotlight-btn fade-left" type='button'>Get in touch</button></Link>
       </div>

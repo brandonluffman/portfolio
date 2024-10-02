@@ -7,6 +7,7 @@ import '../styles/navbar.css'
 import '../styles/footer.css'
 import '../styles/contactpage.css'
 import '../styles/loading.css'
+import '../styles/index2.css'
 
 import Layout from '../components/Layout';
 
